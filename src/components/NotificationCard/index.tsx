@@ -46,21 +46,32 @@ const NotificationCard = ({
         <GridItem w="100%">
           <Text fontSize="md">Notificar quando atingir</Text>
           <br />
-          <Stack shouldWrapChildren direction="row">
-            <NumberInput
-              size="lg"
-              maxW={32}
-              maxH={32}
-              defaultValue={100}
-              min={0}
-            >
-              <NumberInputField />
-              <NumberInputStepper>
-                <NumberIncrementStepper />
-                <NumberDecrementStepper />
-              </NumberInputStepper>
-            </NumberInput>
-          </Stack>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'flex-end',
+            }}
+          >
+            <Stack shouldWrapChildren direction="row">
+              <NumberInput
+                size="lg"
+                maxW={32}
+                maxH={32}
+                defaultValue={100}
+                min={0}
+              >
+                <NumberInputField />
+                <NumberInputStepper>
+                  <NumberIncrementStepper />
+                  <NumberDecrementStepper />
+                </NumberInputStepper>
+              </NumberInput>
+            </Stack>
+            <Text style={{ marginLeft: '0.5rem' }} fontSize="md">
+              Litros
+            </Text>
+          </div>
         </GridItem>
       </Grid>
     </Card>

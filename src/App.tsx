@@ -6,6 +6,8 @@ import Dicas from './pages/Dicas/index';
 import NotFound from './pages/NotFound';
 import Notificacoes from './pages/Notificacoes';
 import Servicos from './pages/Servicos';
+import Detalhes from './pages/Detalhes/index';
+import Lp from './pages/Lp';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route path="/dicas" element={<Dicas />} />
             <Route path="/alertas" element={<Notificacoes />} />
             <Route path="/servicos" element={<Servicos />} />
+            <Route path="/detalhes" element={<Detalhes />} />
+            <Route path="/" element={<Lp />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
